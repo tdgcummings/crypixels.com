@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CryPixels - Procedural Sprite Generator</title>
+  <link rel="apple-touch-icon" href="img/icon.png">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  
+  <meta name="description" content="Easily create hundreds of pixel art sprites for games or any other project, with an easy to use interface.">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@crysoftware" />
+  <meta name="twitter:creator" content="@crysoftware" />
+  <meta property="og:url" content="http://crypixels.com/" />
+  <meta property="og:title" content="CryPixels - Procedural Sprite Generator" />
+  <meta property="og:description" content="Easily create hundreds of pixel art sprites for games or any other project, with an easy to use interface." />
+  <meta property="og:image" content="http://crypixels.com/img/screenshot-spaceship.png" />
+  <meta name="theme-color" content="#0074D9" />
+  <meta name="google-site-verification" content="jT498XN58-NHHIj-bgw2Wmgynajr7o3NReNBfXl9WIY" />
+  
+  <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:700" rel="stylesheet">
+  <link rel="stylesheet" href="css/uikit.min.css?v=7">
+  <link rel="stylesheet" href="css/app.css?v=7">
+</head>
+<body>
+<!-- Body Start -->
+<div id="overview"></div>
+
+<div class="navigation" uk-sticky>
+  <div class="uk-container uk-container-center">
+    <ul uk-scrollspy-nav="closest: li; offset: 75">
+      <li><a href="#overview" uk-scroll="offset: 75">Overview</a></li>
+      <li><a href="#features" uk-scroll="offset: 75">Features</a></li>
+      <li><a href="#faq" uk-scroll="offset: 75">FAQ</a></li>
+      <li><a href="#buy" uk-scroll="offset: 75">Buy</a></li>
+      <li><a href="docs/">Docs</a></li>
+      <li><a href="https://crysoftware.itch.io/crypixels"><span class="uk-icon uk-icon-image" style="background-image: url(img/platforms/itch.png);"></span> itch.io</a></li>
+    </ul>
+  </div>
+</div>
+
+<div id="header" class="uk-section">
+  <div class="uk-container">
+    <div uk-grid>
+      <div class="uk-width-1-2@m uk-text-center uk-margin-bottom">
+        <img src="img/logo.png" alt="CryPixels">
+        <h2>Procedural Sprite Generator</h2>
+        <p>Easily create hundreds of pixel art sprites for games or any other project, with an easy to use interface.</p>
+        <p uk-margin>
+          <a id="buy_button" class="uk-button uk-button-primary">Buy Now</a>
+          <!-- <a class="uk-button uk-button-primary" href="#buy" uk-scroll>Buy Now</a> -->
+          <a class="uk-button uk-button-default" href="#faq" uk-scroll>Frequently asked questions</a>
+        </p>
+      </div>
+    
+      <div class="uk-width-1-2@m uk-text-center uk-text-right@m">
+        <div class="uk-inline uk-dark">
+          <img class="screenshot" src="img/screenshots/spaceship-2.png" alt="Procedurally generated pixel art">
+          <a class="uk-animation-fade uk-position-absolute uk-transform-center" style="left: 50%; top: 15%" uk-marker title="Build your own generation grid using pre-defined options, or load an example grid" uk-tooltip="pos: bottom;"></a>
+          <a class="uk-animation-fade uk-position-absolute uk-transform-center" style="left: 7.5%; top: 50%" uk-marker title="User has complete control over all the generation settings" uk-tooltip="pos: right;"></a>
+          <a class="uk-animation-fade uk-position-absolute uk-transform-center" style="left: 55%; top: 70%" uk-marker title="Generate up-to 500 sprites each time!" uk-tooltip="pos: bottom;"></a>
+        </div>
+      </div> 
+    </div>  
+  </div>
+</div><!-- .header -->
+  
+<div id="features" class="uk-section section-dark">
+  <div class="uk-container">
+    <div uk-grid>         
+      <div class="uk-width-1-2@m">
+        <h1>Features</h1>
+        <p>Build your own generation grid using pre-defined options, then start generating using the different output settings.</p>
+        <p>User has complete control over all the generation process, from the initial grid to the settings used during generation.</p>
+        <p>Includes a collection of pre-built grids to get you up and running quickly, which can be edited to suit your needs.</p>
+        <ul>   
+          <li>Create .crypix generation grids up-to 32x32px.</li>
+          <li>Mirror the grid vertically, horizontally or in both directions.</li>
+          <li>Switch between Grid View, Output view and a Split Panel View.</li>
+          <li>Output up-to 500 sprites per re-generation.</li>
+          <li>Change the output preview background colour.</li>
+          <li>Scale the outputted sprites up-to 8x.</li>
+          <li>Output .png sprite in original pixel size or scaled pixel size.</li>
+          <li>Undo/Redo grid changes up-to 10 actions.</li>
+          <li>Import/Export .crypix grid files.</li>
+          <li>1-bit mode for retro style sprites.</li>
+          <li>And much more&hellip;</li>
+        </ul>
+      </div>
+      
+      <div class="uk-width-1-2@m uk-flex-first@m"> 
+        <div class="uk-child-width-1-2@m uk-child-width-1-3 uk-grid-small screenshot-light" uk-grid uk-lightbox>
+          <a href="img/screenshots/humanoid-1.png">
+            <img src="img/screenshots/humanoid-1.png" alt="Procedurally generated humanoids">
+          </a>
+          <a href="img/screenshots/spaceship-3-1bit.png">
+            <img src="img/screenshots/spaceship-3-1bit.png" alt="Procedurally generated 1 bit spaceships">
+          </a>
+          <a href="img/screenshots/tree-1.png">
+            <img src="img/screenshots/tree-1.png" alt="Procedurally generated trees">
+          </a>
+          <a href="img/screenshots/robot-1-1bit.png">
+            <img src="img/screenshots/robot-1-1bit.png" alt="Procedurally generated robots">
+          </a>
+          <a href="img/screenshots/rounded-3.png">
+            <img src="img/screenshots/rounded-3.png">
+          </a>
+          <a href="img/screenshots/spaceship-2.png">
+            <img src="img/screenshots/spaceship-2.png" alt="Procedurally generated spaceships">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- .features -->
+  
+<div class="uk-section uk-section-xsmall section-blue">
+  <div class="uk-container">
+    <div class="uk-grid-collapse uk-text-center" uk-grid>
+      <div class="uk-width-1-4"><span class="uk-margin-small-bottom" uk-icon="icon: image; ratio: 2"></span><br>Exports PNG image files</div>
+      <div class="uk-width-1-4"><span class="uk-margin-small-bottom" uk-icon="icon: grid; ratio: 2"></span><br>1-bit mode for retro art</div>
+      <div class="uk-width-1-4"><span class="uk-margin-small-bottom" uk-icon="icon: laptop; ratio: 2"></span><br>Windows and MacOS</div>
+      <div class="uk-width-1-4"><span class="uk-margin-small-bottom" uk-icon="icon: refresh; ratio: 2"></span><br>Free updates</div>
+    </div>  
+  </div>
+</div>
+
+<div id="faq" class="uk-section section-dark">
+  <div class="uk-container">
+    <h1>FAQ</h1>   
+    <ul uk-accordion="collapsible: false" class="uk-light">
+      <li class="uk-open">
+        <a class="uk-accordion-title">Can I use generated sprites with my favourite 2d game engine?</a>
+        <div class="uk-accordion-content">
+          <p>Any game engine that can load a PNG graphics file can use sprites generated with CryPixels.</p>
+        </div>
+      </li>
+      
+      <li>
+        <a class="uk-accordion-title">What example grids are included in the most recent version?</a>
+        <div class="uk-accordion-content">
+          <p>There are 15 example generation grids to get you started quickly, including spaceships, monsters, robots, trees and humanoids. In the latest version you can load all the examples directly from the software start screen.</p>
+        </div>
+      </li>
+      
+      <li>
+        <a class="uk-accordion-title">Will I be able to easily make custom generation grids?</a>
+        <div class="uk-accordion-content">
+          <p>Certainly! Check out our latest <a href="https://itch.io/board/151419/guides">guides</a> to find out how to use all the grid tools.</p>
+        </div>
+      </li>
+      
+      <li>
+        <a class="uk-accordion-title">What's the license for sprites made using CryPixels?</a>
+        <div class="uk-accordion-content">
+          <p>You may use the sprites in any type of project, including personal, education and commercial. There's no need to give credit to CryPixels.</p>
+        </div>
+      </li>
+      
+      <li>
+        <a class="uk-accordion-title">Can I use a single copy of CryPixels on multiple computers?</a>
+        <div class="uk-accordion-content">
+          <p>Yes, the license is per user so you can use it on any computers you personally own and operate.</p>
+        </div>
+      </li>
+      
+      <li>
+        <a class="uk-accordion-title">Will there be a Linux version?</a>
+        <div class="uk-accordion-content">
+          <p>We are currently working hard on getting the Windows and macOS versions as good as they can be. Linux support is planned in the future, please post on the forum if your interested in this platform.</p>
+        </div>
+      </li>
+      
+      <li>
+        <a class="uk-accordion-title">When opening the software on Windows, it is blocked by SmartScreen?</a>
+        <div class="uk-accordion-content">
+          <p>We recommend installing via the <a href="https://itch.io/app">itch.io app</a>, because of this we don't sign our apps, therefore Windows doesn't recognise the program. Click on More information and instruct Windows to run the program anyway, or change your SmartScreen settings. CryPixels is perfectly safe, as long as you downloaded it from our itch.io page.</p>
+        </div>
+      </li>
+      
+      <li>
+        <a class="uk-accordion-title">When opening the software on mac, it doesn't let me because it's from an unknown developer?</a>
+        <div class="uk-accordion-content">
+          <p>To resolve this, simply right-click the program and choose "Open", then you will get an option to "Run anyway". Next time it will run without prompting.</p>
+        </div>
+      </li>
+      
+      <li>
+        <a class="uk-accordion-title">Minimum system requirements</a>
+        <div class="uk-accordion-content">
+          <p>Operating System: Microsoft Windows 7 or later / macOS 10.9 or later</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- .faq -->
+  
+<div id="community" class="uk-section uk-section-small section-blue">
+  <div class="uk-container uk-text-center">
+    <h4>Community Forums</h4>
+    <p>Join the community to share .crypix grid files and showcase your generated sprites!</p>
+    <p>You can also report bugs and request new features.</p>
+    <a class="uk-button uk-button-default" href="https://crysoftware.itch.io/crypixels/community">Forums</a>
+  </div>
+</div><!-- .community -->
+  
+<div id="buy" class="uk-section section-dark">
+  <div class="uk-container uk-container-small">
+    <h1>Buy</h1>
+    <p>CryPixels has a demo available for download on our <a href="https://crysoftware.itch.io/crypixels#demo">itch.io page</a>, please use this to test system compatibility if unsure.</p>
+    <p>Purchase the full version on itch.io (free updates, Windows or MacOS, automatic updates if using the <a href="https://itch.io/app">itch.io app</a>).</p>
+      
+    <div class="uk-text-center">
+      <!-- Add iframe max-width: 100% to fix itch widget on mobile -->
+      <iframe style="max-width: 100%;" frameborder="0" src="https://itch.io/embed/206020?linkback=true&amp;bg_color=252525&amp;fg_color=fff&amp;link_color=1A82DC&amp;border_color=252525" width="552" height="167" ></iframe>
+    </div>
+  </div>
+</div><!-- .buy -->
+  
+<div class="uk-section footer">
+  <div class="uk-container">
+    <div class="uk-grid-large" uk-grid>
+      <div class="uk-width-1-3@m uk-text-center uk-light social-icons">
+        <a href="https://twitter.com/crysoftware" class="uk-icon-link" uk-icon="icon: twitter; ratio: 1.5"></a>
+        <a href="https://www.facebook.com/crysoftware/" class="uk-icon-link" uk-icon="icon: facebook; ratio: 1.5"></a>
+        <a href="https://www.youtube.com/channel/UC_z4NR0U6I5VDl_fbUJi_pQ" class="uk-icon-link" uk-icon="icon: youtube; ratio: 1.5"></a>
+      </div>
+      
+      <div class="uk-width-1-3@m uk-text-center uk-text-left@m uk-flex-first@m">
+        <a href="http://www.crysoftware.com"><img src="img/crys-logo-footer.png" alt="CrySoftware"></a>
+        <p>Copyright &copy; 2017-2018 <a href="http://www.crysoftware.com">CrySoftware</a></p>
+      </div>
+      
+      <div class="uk-width-1-3@m">
+        <ul class="uk-list uk-text-center uk-text-right@m">
+          <li><a href="https://crysoftware.itch.io/crypixels/community">Forum</a></li>
+          <li><a href="https://crysoftware.itch.io/crypixels">itch.io page</a></li>
+          <li><a href="mailto:support@crypixels.com">support@crypixels.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div><!-- .footer -->
+
+<script src="js/uikit.min.js?v=7"></script>
+<script src="js/uikit-icons.min.js?v=7"></script>
+
+<script type="text/javascript" src="https://static.itch.io/api.js"></script>
+<script type="text/javascript">
+  Itch.attachBuyButton(document.getElementById("buy_button"), {
+    // replace the following with the correct information about your game
+    user: "crysoftware",
+    game: "crypixels"
+  });
+</script>
+<!-- Body End -->
+</body>
+</html>
+
