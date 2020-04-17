@@ -1,0 +1,112 @@
+/* CryS Silver: #8a8d8f */
+/* CryPixels Blue: #0074d9 */
+/* CryPixels Blue 10% darker: #0068c2 */
+/* CryPixels Blue 10% lighter: #1a82dc */
+
+body {
+  background-color: #111;
+  background-image: url("images/overlay.png"), -moz-linear-gradient(0deg, #111 70%, #8a8d8f 100%);
+  background-image: url("images/overlay.png"), -webkit-linear-gradient(0deg, #111 70%, #8a8d8f 100%);
+  background-image: url("images/overlay.png"), -ms-linear-gradient(0deg, #111 70%, #8a8d8f 100%);
+  background-image: url("images/overlay.png"), linear-gradient(0deg, #111 70%, #8a8d8f 100%);
+}
+
+p.question {
+	font-weight: bold;
+	margin-bottom: 0.25em;
+}
+
+/* Fix poptrox bottom padding on youtube video */
+.pic {
+  line-height: 0;
+}
+
+.image img {
+  border: 3px solid #dddddd;
+  border-top-width: 10px;
+  border-radius: 4px;
+}
+
+.spotlight .image,
+.spotlight .image img {
+  border-radius: 8px;
+}
+
+.spotlight .image img {
+  width: 24em;
+}
+
+@media screen and (max-width: 736px) {
+  .spotlight .image img {
+    width: 18em;
+  }
+}
+
+.statistics {
+  margin-top: 1em;
+}
+
+@media screen and (max-width: 736px) {
+  .statistics {
+    margin-top: 0;
+  }
+}
+
+#main header.major h2:after {
+  background-color: #dddddd;
+  background-image: -moz-linear-gradient(90deg, #9acd32, #6a5acd, #cd5c5c, #ffa500);
+  background-image: -webkit-linear-gradient(90deg, #9acd32, #6a5acd, #cd5c5c, #ffa500);
+  background-image: -ms-linear-gradient(90deg, #9acd32, #6a5acd, #cd5c5c, #ffa500);
+  background-image: linear-gradient(90deg, #9acd32, #6a5acd, #cd5c5c, #ffa500);
+}
+
+#main input[type="submit"].primary,
+#main input[type="reset"].primary,
+#main input[type="button"].primary,
+#main button.primary,
+#main .button.primary {
+  background-color: #0074d9;
+}
+
+#main input[type="submit"].primary:hover,
+#main input[type="reset"].primary:hover,
+#main input[type="button"].primary:hover,
+#main button.primary:hover,
+#main .button.primary:hover {
+  background-color: #1a82dc;
+}
+
+#main input[type="submit"].primary:active,
+#main input[type="reset"].primary:active,
+#main input[type="button"].primary:active,
+#main button.primary:active,
+#main .button.primary:active {
+  background-color: #0068c2;
+}
+
+.statistics li.style1 {
+	background: #9acd32;
+}
+
+.statistics li.style2 {
+	background: #6a5acd;
+}
+
+.statistics li.style3 {
+	background: #cd5c5c;
+}
+
+.statistics li.style4 {
+	background: #ffa500;
+}
+
+li.buy-box {
+  border: 1px solid #ddd;
+  padding: 2em !important;
+  border-radius: 8px;
+}
+
+li.buy-box > img {
+  margin-bottom: 1em;
+}
+
