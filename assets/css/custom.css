@@ -100,13 +100,33 @@ p.question {
 	background: #ffa500;
 }
 
-li.buy-box {
+.buy-box {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 2em;
   border: 1px solid #ddd;
   padding: 2em !important;
   border-radius: 8px;
 }
 
-li.buy-box > img {
+.buy-box > img {
+  max-width: 100%;
   margin-bottom: 1em;
 }
 
+.buy-stores {
+  display: inline-block;
+}
+
+.buy-stores + .buy-stores {
+  margin-left: 2em;
+}
+
+.buy-stores .icon {
+  font-size: 3em;
+  line-height: 1.2;
+}
+
+.buy-stores a {
+  border-bottom: none;
+}

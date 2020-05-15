@@ -184,16 +184,25 @@
                 <p>Purchase the full version for Windows and macOS with free updates (automatic updates if using the <a href="https://itch.io/app">itch.io app</a>).</p>
 
                 <footer>
-                  <ul class="actions special">
-                    <!-- <li class="buy-box">
-                      <img src="images/logo-wide-blk.png" alt="CryPixels Logo" width="334"><br>
-                      <a id="buy_button" href="#buy" class="button primary">Buy for $19.99</a><br>
-                      <sub>(One-time payment at Itch.io, DRM-free)</sub>
-                    </li> -->
-                    <li>
-                      <iframe style="max-width:100%;" frameborder="0" src="https://itch.io/embed/206020?link_color=0074d9&amp;border_color=ddd" width="552" height="167"><a href="https://crysoftware.itch.io/crypixels">CryPixels by CrySoftware</a></iframe>
-                    </li>
-                  </ul>
+                  <div class="buy-box">
+                    <img src="images/logo-wide-blk.png" alt="CryPixels Logo" width="334"><br>
+                    <a id="buy_button" href="#buy" class="button primary">Buy for $19.99</a><br>
+                    <sub>(One-time payment at Itch.io, DRM-free)</sub>
+                  </div>
+                  <p style="margin-bottom:1em;">Alternative payment methods:</p>
+                  
+                  <div class="buy-stores">
+                    <a href="https://crysoftware.itch.io/crypixels">
+                      <span class="icon brands fa-itch-io"></span>
+                      <p>itch.io</p>
+                    </a>
+                  </div>
+                  <div class="buy-stores">
+                    <a href="https://store.steampowered.com/app/776180/CryPixels/">
+                      <span class="icon brands fa-steam"></span><br>
+                      <p>Steam</p>
+                    </a>
+                  </div>
                 </footer>
               </section>
 
@@ -237,13 +246,13 @@
       <script src="assets/js/util.js"></script>
       <script src="assets/js/main.js"></script>
       
-      <!-- <script type="text/javascript" src="https://static.itch.io/api.js"></script>
-      <script type="text/javascript">
+      <script src="https://static.itch.io/api.js"></script>
+      <script>
         Itch.attachBuyButton(document.getElementById("buy_button"), {
           user: "crysoftware",
           game: "crypixels"
         });
-      </script> -->
+      </script>
 
   </body>
 </html>
