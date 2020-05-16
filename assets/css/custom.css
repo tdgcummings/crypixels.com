@@ -16,6 +16,10 @@ p.question {
 	margin-bottom: 0.25em;
 }
 
+.nav-buy {
+  font-weight: 400;
+}
+
 /* Fix poptrox bottom padding on youtube video */
 .pic {
   line-height: 0;
