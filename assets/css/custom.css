@@ -48,6 +48,7 @@ p.question {
 
 .statistics {
   margin-top: 1em;
+  font-size: 90%;
 }
 
 .statistics > * {
