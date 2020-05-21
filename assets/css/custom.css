@@ -50,6 +50,10 @@ p.question {
   margin-top: 1em;
 }
 
+.statistics > * {
+  font-size: 90%;
+}
+
 @media screen and (max-width: 736px) {
   .statistics {
     margin-top: 0;
