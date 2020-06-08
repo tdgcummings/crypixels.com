@@ -355,3 +355,90 @@ The shortcuts listed below can also be viewed from inside the app, by clicking t
     <td>Cmd R</td> 
   </tr>
 </table>
+
+
+# Changelog
+
+### v1.3.0
+
+**Enhancements**
+* Accent colour feature to 1-bit mode
+* Flood-fill brush, works like the paint bucket tool in other programs
+* Keyboard shortcuts for the different views 'Split', 'Grid' and 'Output'
+* Documentation now accessible from the welcome screen
+* New icon to match the logo rebrand
+
+**Changes**
+* Changed MacOS combination shortcut keys from using 'ctrl' to using 'cmd' key for improved compatibility with system shortcut combinations
+* Moved the 'Pan' shortcut next to 'Center Grid',  and moved 'Clear Grid' into 'Grid Tools/Setup'
+* 'Pan' keyboard shortcut is now hold while using, and returns to previous brush when released
+
+**Bug Fixes**
+* Blank sprites from being outputted when using a sparsely populated generation grid
+
+### v1.2.0
+
+**Enhancements**
+* 'Force Color' brush (similar to always border but with specific set colour)
+* 'Disable mirror on center line' in 'Grid tools'
+
+**Changes**
+* .crypix file format to version 1.1
+* Demo version is no longer limited to 1-bit mode, all features can be tested except exporting
+
+**Bug Fixes**
+* 'Body/None' brush was labelled wrong in the Shortcuts helper window
+* 'Output Number' & 'Output Scale' would use previous value if input still active when using 'Regenerate' keyboard shortcut
+
+### v1.1.1
+
+**Enhancements**
+* Mac download now uses a DMG disk image format, with a shortcut for dragging to Applications folder
+* Added a Windows installer option for users not using the itch.io App.
+* Windows installer option associates .crypix files with CryPixels.
+
+**Bug Fixes**
+* Fix Windows File Explorer not opening .crypix files when CryPixels is already open
+* Fix macOS Finder not opening .crypix files when path contains white spaces
+
+### v1.1.0
+
+**Enhancements**
+* Option when generating sprites to force specific colours, 3 colours can be selected which will be cycled through in order when needed for colour variations
+* When right clicking sprites you can now 'Copy to Clipboard' in the context menu with options for 1x or scaled
+* Allow Mac users to open .crypix files using Finder or by dragging files to the dock icon
+* Allow Windows users to open .crypix files using File Explorer
+* Improved welcome screen with additional information
+
+**Bug Fixes**
+* Fix rare bug that causes shortcut keys not to work when using the re-generate shortcut multiple times while a sprite is selected
+* Add warning when loading grid from 'grid tools' panel that unsaved data will be lost
+* Fix crash when dragging a file onto the apps window using Finder or File Explorer
+
+### v1.0.0
+
+**Enhancements**
+* Add option to set additional body colour when generating 1-bit sprites
+* Add Windows and Mac demo with certain limitations.
+
+**Changes**
+* Changed some UI label names to make them more consistent across app.
+
+### v0.4.2
+
+**Enhancements**
+* Add 'Bulk Export' panel
+* Add option to export all generated sprites to a .zip file
+* Add option to set bulk export file name and separator style between the file name and sprite number
+* Add 'Load Example' selector to the start screen so user's don't need to download the separate example-grids file
+
+**Changes**
+* Change 'Reset Software' button in toolbar footer to 'Reload Software'
+
+**Bug Fixes**
+* Fixed input fields resetting if still focused when hovering the generation grid
+* Fixed grid brush would paint without mouse-down after outputting sprite using context menu
+
+### v0.4.1
+
+Initial Release
