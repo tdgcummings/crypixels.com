@@ -179,7 +179,11 @@ Underneath the main toolbar you can open the 'Generation Settings' panel, here y
 
 * **Background Color**  
   Sets the 'Output View' background color  
-  _(this is for preview purposes only, all outputted sprites will have a transparent background)_
+  _(all outputted sprites will have a transparent background unless the below option is checked)_
+  
+* **Include background color on export**  _v1.3.1 onwards_  
+  When enabled the background colour will be included when using all export options  
+  _(this includes batch exporting and sprite sheet export)_
 
 * **1-bit Mode**  
   When enabled, sprites will be generated in 1-bit style, using the selected color from the color picker  
@@ -189,7 +193,7 @@ Underneath the main toolbar you can open the 'Generation Settings' panel, here y
   When enabled, you can set a body color for 1-bit style sprites using the color picker  
   _(this option is only available when 1-bit mode is enabled)_
   
-* **1-bit Accent**  _v1.3 onwards_   
+* **1-bit Accent**  _v1.3 onwards_  
   When enabled, you can set a color which will be used for any darker pixels in the sprites body using the color picker  
   _(this option is only available when 1-bit mode is enabled)_
   
@@ -230,7 +234,7 @@ Underneath the main toolbar you can open the 'Generation Settings' panel, here y
 ![Generation settings panel](images/generation-settings.png)
 
 
-# Batch Export Panel
+# Batch Export Panel  
 
 Underneath the main toolbar you can open the 'Batch Export' panel, here you will be able to batch export all generated sprites at one time.
 
@@ -254,6 +258,29 @@ Underneath the main toolbar you can open the 'Batch Export' panel, here you will
   _(the outputted sprites will be saved as a .zip directory so you can't accidentally fill your desktop with 500 sprites!)_
 
 ![Batch export panel](images/batch-export.png)
+
+
+# Sprite Sheet Export Panel
+
+**_v1.3.1 onwards_**
+
+Underneath the main toolbar you can open the 'Sprite Sheet Export' panel, here you will be able to export all generated sprites to a sprite sheet.
+
+* **Scale**  
+  Chose between one of the following options:
+  * **1x:** Output sprites in original pixel size  
+  _(if you have a 10px wide generation grid, it will output all sprites 10px wide regardless of the 'Output Scale')_
+  * **Scaled:** Output sprites using the 'Scaled Size'  
+  _(if you have a 10px wide generation grid and a 'Output Scale' of 4, it will output all sprites 40px wide)_
+
+* **Padding**  
+  Sets the padding in 'px' which will be added between each individual sprite in the sprite sheet  
+  _(this is useful to avoid texture bleeding which can happen when using certain renderers such as OpenGl)_
+
+* **Save As**  
+  Saves the generated sprite sheet to your chosen directory  
+
+![Sprite sheet export panel](images/sprite-sheet-export.png)
 
 
 # Shortcut Keys
@@ -359,83 +386,97 @@ The shortcuts listed below can also be viewed from inside the app, by clicking t
 
 # Changelog
 
+### v1.3.1
+
+**Enhancements:**
+* Sprite sheet exporter
+* Option to include the background color when exporting sprites added to the Generation Settings panel
+
+**Changes:**
+* Display wait cursor when regenerating sprites, batch exporting and sprite sheet exporting for better user experience
+* Increase the max generation grid size to 64
+
+**Bug Fixes:**
+* Fixed .crypix file association on Windows when using Steam Client
+* Fixed grid brush incorrectly remaining active when leaving generation grid panel while holding left click
+
 ### v1.3.0
 
-**Enhancements**
+**Enhancements:**
 * Accent colour feature to 1-bit mode
 * Flood-fill brush, works like the paint bucket tool in other programs
 * Keyboard shortcuts for the different views 'Split', 'Grid' and 'Output'
 * Documentation now accessible from the welcome screen
 * New icon to match the logo rebrand
 
-**Changes**
+**Changes:**
 * Changed MacOS combination shortcut keys from using 'ctrl' to using 'cmd' key for improved compatibility with system shortcut combinations
 * Moved the 'Pan' shortcut next to 'Center Grid',  and moved 'Clear Grid' into 'Grid Tools/Setup'
 * 'Pan' keyboard shortcut is now hold while using, and returns to previous brush when released
 
-**Bug Fixes**
+**Bug Fixes:**
 * Blank sprites from being outputted when using a sparsely populated generation grid
 
 ### v1.2.0
 
-**Enhancements**
+**Enhancements:**
 * 'Force Color' brush (similar to always border but with specific set colour)
 * 'Disable mirror on center line' in 'Grid tools'
 
-**Changes**
+**Changes:**
 * .crypix file format to version 1.1
 * Demo version is no longer limited to 1-bit mode, all features can be tested except exporting
 
-**Bug Fixes**
+**Bug Fixes:**
 * 'Body/None' brush was labelled wrong in the Shortcuts helper window
 * 'Output Number' & 'Output Scale' would use previous value if input still active when using 'Regenerate' keyboard shortcut
 
 ### v1.1.1
 
-**Enhancements**
+**Enhancements:**
 * Mac download now uses a DMG disk image format, with a shortcut for dragging to Applications folder
 * Added a Windows installer option for users not using the itch.io App.
 * Windows installer option associates .crypix files with CryPixels.
 
-**Bug Fixes**
+**Bug Fixes:**
 * Fix Windows File Explorer not opening .crypix files when CryPixels is already open
 * Fix macOS Finder not opening .crypix files when path contains white spaces
 
 ### v1.1.0
 
-**Enhancements**
+**Enhancements:**
 * Option when generating sprites to force specific colours, 3 colours can be selected which will be cycled through in order when needed for colour variations
 * When right clicking sprites you can now 'Copy to Clipboard' in the context menu with options for 1x or scaled
 * Allow Mac users to open .crypix files using Finder or by dragging files to the dock icon
 * Allow Windows users to open .crypix files using File Explorer
 * Improved welcome screen with additional information
 
-**Bug Fixes**
+**Bug Fixes:**
 * Fix rare bug that causes shortcut keys not to work when using the re-generate shortcut multiple times while a sprite is selected
 * Add warning when loading grid from 'grid tools' panel that unsaved data will be lost
 * Fix crash when dragging a file onto the apps window using Finder or File Explorer
 
 ### v1.0.0
 
-**Enhancements**
+**Enhancements:**
 * Add option to set additional body colour when generating 1-bit sprites
 * Add Windows and Mac demo with certain limitations.
 
-**Changes**
+**Changes:**
 * Changed some UI label names to make them more consistent across app.
 
 ### v0.4.2
 
-**Enhancements**
+**Enhancements:**
 * Add 'Bulk Export' panel
 * Add option to export all generated sprites to a .zip file
 * Add option to set bulk export file name and separator style between the file name and sprite number
 * Add 'Load Example' selector to the start screen so user's don't need to download the separate example-grids file
 
-**Changes**
+**Changes:**
 * Change 'Reset Software' button in toolbar footer to 'Reload Software'
 
-**Bug Fixes**
+**Bug Fixes:**
 * Fixed input fields resetting if still focused when hovering the generation grid
 * Fixed grid brush would paint without mouse-down after outputting sprite using context menu
 
