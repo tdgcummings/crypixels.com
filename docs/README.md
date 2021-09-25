@@ -52,6 +52,7 @@ CryPixels has 4 different Generation Grid Brushes. Each brush has a specific col
   
 * **Eraser**  
   This will erase any grid squares back to blank  
+  You can also use <kbd>Right Click</kbd> to erase  _v1.3.2 onwards_  
   _(if you want to erase the whole grid use the 'Clear Grid' button)_
   
 ![Grid brushes](images/grid-brushes.png)
@@ -227,8 +228,8 @@ Underneath the main toolbar you can open the 'Generation Settings' panel, here y
   When 'Color Variations' are used, the gradient direction sets which way the variation will happen (i.e. vertical causes the colors to change top to bottom)  
   _(this setting defaults to random)_
 
-* **Force Specific Colors**  
-  Allows 3 selected colors to be used instead of random colors, if 'Color Variations' is set to '0' then only the first color will be used  
+* **Force Specific Colors**  _v1.3.1 and below limited to 3 colors_  
+  Allows up-to 8 selected colors to be used instead of random colors, if 'Color Variations' is set to '0' then only the first color will be used  
   _(when enabled 'Saturation' and 'Base Brightness' will be disabled as they serve no purpose)_
 
 ![Generation settings panel](images/generation-settings.png)
@@ -273,9 +274,13 @@ Underneath the main toolbar you can open the 'Sprite Sheet Export' panel, here y
   * **Scaled:** Output sprites using the 'Scaled Size'  
   _(if you have a 10px wide generation grid and a 'Output Scale' of 4, it will output all sprites 40px wide)_
 
-* **Padding**  
+* **Sprite Padding**  
   Sets the padding in 'px' which will be added between each individual sprite in the sprite sheet  
   _(this is useful to avoid texture bleeding which can happen when using certain renderers such as OpenGl)_
+
+* **Border Padding**  _v1.3.2 onwards_  
+  Sets the padding in 'px' which will be added to the outer edge of the sprite sheet  
+  _(this is useful as some sprite sheet importers require the same sprite padding applied to the outer edge)_
 
 * **Save As**  
   Saves the generated sprite sheet to your chosen directory  
@@ -337,6 +342,11 @@ The shortcuts listed below can also be viewed from inside the app, by clicking t
     <td>S</td> 
   </tr>
   <tr>
+    <td>Fill Brush _v1.3.2 onwards_</td>
+    <td>A</td> 
+    <td>A</td> 
+  </tr>
+  <tr>
     <td>Zoom In</td>
     <td>Ctrl +</td> 
     <td>Cmd +</td> 
@@ -385,6 +395,19 @@ The shortcuts listed below can also be viewed from inside the app, by clicking t
 
 
 # Changelog
+
+### v1.3.2
+
+**Enhancements:**
+* Keyboard shortcut for 'Fill' brush
+* Right mouse click shortcut for 'Eraser'
+* Added 'Border Padding' option to sprite sheet exporter for increased compatibility
+
+**Changes:**
+* Increase 'Force Specific Colors' to allow up-to 8 colours 
+
+**Bug Fixes:**
+* Fixed macOS Big Sur compatibility
 
 ### v1.3.1
 
